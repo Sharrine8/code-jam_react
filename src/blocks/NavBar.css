@@ -9,8 +9,19 @@
 .nav__link {
   color: #d94e28;
   text-decoration: none;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s linear;
 }
 
 .nav__link_active {
-  color: #000;
+  background-color: rgba(217, 78, 40, 0.5);
+  color: #fff;
+}
+
+.nav__link:hover {
+  background-color: rgba(217, 78, 40, 0.5);
+  color: #fff;
 }
