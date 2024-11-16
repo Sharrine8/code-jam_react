@@ -17,11 +17,11 @@
 }
 
 .nav__link_active {
-  background-color: rgba(217, 78, 40, 0.5);
+  background-color: rgba(217, 78, 40, 0.8);
   color: #fff;
 }
 
 .nav__link:hover {
-  background-color: rgba(217, 78, 40, 0.5);
+  background-color: rgba(217, 78, 40, 1);
   color: #fff;
 }
