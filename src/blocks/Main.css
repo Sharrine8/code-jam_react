@@ -6,7 +6,7 @@
 .main__header {
   display: flex;
   gap: 30px;
-  padding: 50px 40px;
+  padding: 2em 40px;
   justify-content: space-evenly;
 }
 
