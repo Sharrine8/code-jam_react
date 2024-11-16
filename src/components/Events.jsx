@@ -6,6 +6,7 @@ function Events() {
       <h2>Event Name</h2>
       <Form />
       <p>Events go here</p>
+      <P>Event list</P>
     </div>
   );
 }
