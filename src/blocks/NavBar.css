@@ -1,11 +1,14 @@
 .nav {
+  padding: 20px 50px 0 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 40px;
+  align-self: flex-end;
 }
 
 .nav__link {
-  color: #f09827;
-  outline: none;
+  color: #d94e28;
+  text-decoration: none;
 }
 
 .nav__link_active {

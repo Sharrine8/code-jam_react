@@ -1,0 +1,17 @@
+.logo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.logo__image {
+  height: 50px;
+  width: 50px;
+}
+
+.logo__title {
+  font-family: "Sacramento", Arial, sans-serif;
+  align-self: center;
+  color: #d94e28;
+  padding-top: 10px;
+}
