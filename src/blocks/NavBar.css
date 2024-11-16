@@ -1,5 +1,5 @@
 .nav {
-  padding: 20px 50px 5px 0;
+  padding: 20px 120px 5px 0;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .nav {
     gap: 5px;
     padding-right: 10px;

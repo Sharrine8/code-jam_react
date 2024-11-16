@@ -1,5 +1,6 @@
 .main {
   margin: auto;
+  scrollbar-gutter: stable both-edges;
 }
 
 .main__header {
