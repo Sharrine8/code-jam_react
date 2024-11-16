@@ -1,0 +1,52 @@
+.main {
+  margin: auto;
+  scrollbar-gutter: stable both-edges;
+}
+
+.main__header {
+  display: flex;
+  gap: 30px;
+  padding: 2em 40px;
+  justify-content: space-evenly;
+}
+
+.main__header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__logo {
+  max-width: 300px;
+}
+
+.main__subtitle {
+  font-family: "Sacramento", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.main__video {
+  width: 100%;
+  max-height: 550px;
+  border-radius: 20px;
+  -webkit-box-shadow: -14px 15px 41px -19px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -14px 15px 41px -19px rgba(0, 0, 0, 0.67);
+  box-shadow: -14px 15px 41px -19px rgba(0, 0, 0, 0.67);
+}
+
+.main__planner {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 78, 40, 0.3) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  border-radius: 30px;
+  min-height: 300px;
+}
+
+@media (max-width: 870px) {
+  .main__header {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+}

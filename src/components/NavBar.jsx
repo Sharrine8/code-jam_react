@@ -4,7 +4,6 @@ import "../blocks/NavBar.css";
 function NavBar() {
   const customClassName = ({ isActive }) =>
     "nav__link" + (isActive ? " nav__link_active" : "");
-  console.log(customClassName);
   return (
     <nav className="nav">
       <NavLink to="/" className={customClassName}>
