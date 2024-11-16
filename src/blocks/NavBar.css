@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav__link {
+  color: #f09827;
+  outline: none;
+}
+
+.nav__link_active {
+  color: #000;
+}
