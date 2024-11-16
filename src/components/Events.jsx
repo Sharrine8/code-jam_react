@@ -1,12 +1,26 @@
+import { useState } from "react";
 import Form from "./Form";
 
 function Events() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="events">
-      <h2>Event Name</h2>
-      <Form />
-      <p>Events go here</p>
-      <P>Event list</P>
+      <button className="events__create-button" onClick={handleOpenModal}>
+        + Add event
+      </button>
+      <Form
+        name="create-event"
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 }
