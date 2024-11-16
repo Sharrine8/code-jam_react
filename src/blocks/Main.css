@@ -9,7 +9,7 @@
   justify-content: space-evenly;
 }
 
-.main__left {
+.main__header-left {
   display: flex;
   flex-direction: column;
   align-items: center;

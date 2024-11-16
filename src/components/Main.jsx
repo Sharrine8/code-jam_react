@@ -6,7 +6,7 @@ function Main() {
   return (
     <div className="main">
       <section className="main__header">
-        <div className="main__left">
+        <div className="main__header-left">
           <img className="main__logo" src={logo} alt="Friendsgiving Jam Logo" />
           <p className="main__subtitle">Event Planner</p>
           <p className="main__header-text">
@@ -14,7 +14,7 @@ function Main() {
             section
           </p>
         </div>
-        <div className="main__right">
+        <div className="main__header-right">
           <video
             autoPlay
             loop
