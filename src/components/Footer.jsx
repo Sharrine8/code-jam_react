@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <p>Footer goes here</p>
-      <p>Video credit: @armmypicca</p>
+      <p>Video credit: @armypicca</p>
     </footer>
   );
 }
