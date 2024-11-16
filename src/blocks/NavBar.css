@@ -1,9 +1,10 @@
 .nav {
-  padding: 20px 50px 0 0;
+  padding: 20px 50px 5px 0;
   display: flex;
   justify-content: center;
   gap: 40px;
   align-self: flex-end;
+  width: 100%;
 }
 
 .nav__link {
@@ -24,4 +25,5 @@
 .nav__link:hover {
   background-color: rgba(217, 78, 40, 1);
   color: #fff;
+  cursor: pointer;
 }
