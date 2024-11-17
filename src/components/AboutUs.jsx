@@ -1,7 +1,7 @@
 import "../blocks/AboutUs.css";
 import logo from "../assets/github-logo.svg";
 import logo2 from "../assets/linkedIn-logo.svg";
-import img from "../assets/Stuart";
+import img from "../assets/Stuart-pic.jpg";
 
 function AboutUs() {
   return (
