@@ -28,7 +28,7 @@ function Main() {
       <section className="main__planner">
         This is the part about the planner, with the image of a planner example
         and a side with the info of how it work
-        <div>okss</div>
+        <div>react yeah</div>
       </section>
     </div>
   );
