@@ -29,6 +29,7 @@ function Main() {
         This is the part about the planner, with the image of a planner example
         and a side with the info of how it work
         <div>okss</div>
+        <div>hello world </div>
       </section>
     </div>
   );
