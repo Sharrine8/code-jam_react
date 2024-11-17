@@ -19,20 +19,29 @@ function AboutUs() {
       <div className="about-us__card">
         <img src="" alt="" className="about-us__image" />
         <div className="about-us__description">
-          <h2 className="about-us__title">Stuart</h2>
+          <h1 className="about-us__title">Stuart</h1>
+          <h2 className="about-us__info">okkkkkscncnscnicc</h2>
+          <button src={logo}></button>
+          <button src={logo2}></button>
         </div>
       </div>
       <div className="about-us__card">
         <img src="" alt="" className="about-us__image" />
         <div className="about-us__description">
-          <h2 className="about-us__title">Stuart</h2>
+          <h1 className="about-us__title">Stuart</h1>
+          <h2 className="about-us__info">okkkkkscncnscnicc</h2>
+          <button src={logo}></button>
+          <button src={logo2}></button>
         </div>
       </div>
 
       <div className="about-us__card">
         <img src="" alt="" className="about-us__image" />
         <div className="about-us__description">
-          <h2 className="about-us__title">Stuart</h2>
+          <h1 className="about-us__title">Stuart</h1>
+          <h2 className="about-us__info">okkkkkscncnscnicc</h2>
+          <button src={logo}></button>
+          <button src={logo2}></button>
         </div>
       </div>
     </div>
