@@ -1,10 +1,16 @@
-import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Modal from "./Modal";
+import "../blocks/MyEvent.css";
 
 function MyEvent() {
-  //   const location = useLocation();
-  //   const formData = location.state?.formData;
   const [formData, setFormData] = useState(null);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const handleOpenModal = () => {
+  //   setIsModalOpen(true);
+  // };
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   useEffect(() => {
     const storedData = sessionStorage.getItem("formData");
@@ -18,12 +24,13 @@ function MyEvent() {
   }
 
   return (
-    <div>
-      <h1>Form data test</h1>
-      <p>{formData.name}</p>
-      <p>{formData.location}</p>
-      <p>{formData.date}</p>
-    </div>
+    <section className="my-event">
+      <h1 className="my-event__title">{formData.name}</h1>
+      <p className="my-event__subtitle">Location: {formData.location}</p>
+      <p className="my-event__subtitle">Date: {formData.date}</p>
+      <div className="my-event__dishes">Testing test</div>
+      <button className="my-event__add-btn">Add dish</button>
+    </section>
   );
 }
 

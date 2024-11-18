@@ -20,53 +20,50 @@ function Form() {
     e.preventDefault();
     sessionStorage.setItem("formData", JSON.stringify(formData));
     navigate("/my-event");
-    // navigate("/my-event", { state: { formData } });
   };
 
   return (
-    <div>
-      <form className="form" onSubmit={handleSubmit}>
-        <label htmlFor="name" className="form__label">
-          <p className="form__text">Event Name:</p>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="form__input"
-            required
-          />
-        </label>
-        <label htmlFor="location" className="form__label">
-          <p className="form__text">Location:</p>
-          <input
-            type="text"
-            id="location"
-            name="location"
-            value={formData.location}
-            onChange={handleChange}
-            className="form__input"
-            required
-          />
-        </label>
-        <label htmlFor="date" className="form__label">
-          <p className="form__text">Date:</p>
-          <input
-            type="text"
-            id="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-            className="form__input"
-            required
-          />
-        </label>
-        <button type="submit" className="form__button">
-          Create
-        </button>
-      </form>
-    </div>
+    <form className="form" onSubmit={handleSubmit}>
+      <label htmlFor="name" className="form__label">
+        <p className="form__text">Event Name:</p>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+      </label>
+      <label htmlFor="location" className="form__label">
+        <p className="form__text">Location:</p>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          value={formData.location}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+      </label>
+      <label htmlFor="date" className="form__label">
+        <p className="form__text">Date:</p>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={formData.date}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+      </label>
+      <button type="submit" className="form__button">
+        Create
+      </button>
+    </form>
   );
 }
 

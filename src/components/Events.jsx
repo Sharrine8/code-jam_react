@@ -14,7 +14,7 @@ function Events() {
   // };
 
   return (
-    <div className="events">
+    <section className="events">
       <h1 className="events__title">Create Event</h1>
       {/* <button className="events__create-button">
         + Add event
@@ -24,7 +24,7 @@ function Events() {
       // isOpen={isModalOpen}
       // onClose={handleCloseModal}
       />
-    </div>
+    </section>
   );
 }
 export default Events;
