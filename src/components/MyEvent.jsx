@@ -1,8 +1,17 @@
 import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function MyEvent() {
-  const location = useLocation();
-  const formData = location.state?.formData;
+  //   const location = useLocation();
+  //   const formData = location.state?.formData;
+  const [formData, setFormData] = useState(null);
+
+  useEffect(() => {
+    const storedData = sessionStorage.getItem("formData");
+    if (storedData) {
+      setFormData(JSON.parse(storedData));
+    }
+  }, []);
 
   if (!formData) {
     return <p>Create an event</p>;

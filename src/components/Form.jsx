@@ -18,7 +18,9 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/my-event", { state: { formData } });
+    sessionStorage.setItem("formData", JSON.stringify(formData));
+    navigate("/my-event");
+    // navigate("/my-event", { state: { formData } });
   };
 
   return (
