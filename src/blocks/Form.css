@@ -17,6 +17,11 @@
   color: black;
 }
 
+.form__input:focus {
+  outline-color: #d94e28;
+  outline-style: outset;
+}
+
 .form__button {
   font-family: "Sacramento", Arial, sans-serif;
   padding: 5px 40px 0;
