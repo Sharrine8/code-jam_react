@@ -9,6 +9,7 @@ function Form() {
     name: "",
     location: "",
     date: "",
+    time: "",
   });
 
   const handleChange = (e) => {
@@ -55,6 +56,18 @@ function Form() {
           id="date"
           name="date"
           value={formData.date}
+          onChange={handleChange}
+          className="form__input"
+          required
+        />
+      </label>
+      <label htmlFor="time" className="form__label">
+        <p className="form__text">Time:</p>
+        <input
+          type="time"
+          id="time"
+          name="time"
+          value={formData.time}
           onChange={handleChange}
           className="form__input"
           required
