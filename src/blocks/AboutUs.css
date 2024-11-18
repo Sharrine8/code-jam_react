@@ -29,8 +29,24 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Sacramento", Arial, sans-serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 29.05px;
+}
+
+.github__logo {
+  background: transparent url(../assets/github-logo.svg) center no-repeat;
+  width: 21px;
+  height: 18px;
+  border: none;
+  font-size: 14px;
+}
+
+.linkedIn__logo {
+  background: transparent url(../assets/linkedIn-logo.svg) center no-repeat;
+  width: 21px;
+  height: 18px;
+  border: none;
+  font-size: 14px;
 }
