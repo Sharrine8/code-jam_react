@@ -12,6 +12,8 @@ function MyEvent() {
     <div>
       <h1>Form data test</h1>
       <p>{formData.name}</p>
+      <p>{formData.location}</p>
+      <p>{formData.date}</p>
     </div>
   );
 }
