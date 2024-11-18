@@ -12,8 +12,8 @@ function AboutUs() {
         <div className="about-us__description">
           <h1 className="about-us__title">Stuart</h1>
           <h2 className="about-us__info">okkkkkscncnscnicc</h2>
-          <button src={logo}></button>
-          <button src={logo2}></button>
+          <button className="github-logo"></button>
+          <button className="=linkedIn__logo"></button>
         </div>
       </div>
 
@@ -22,8 +22,8 @@ function AboutUs() {
         <div className="about-us__description">
           <h1 className="about-us__title">Stuart</h1>
           <h2 className="about-us__info">okkkkkscncnscnicc</h2>
-          <button src={logo}></button>
-          <button src={logo2}></button>
+          <button className="github__logo" src={logo} type="button"></button>
+          <button className="linkedIn__logo" src={logo2}></button>
         </div>
       </div>
       <div className="about-us__card">
