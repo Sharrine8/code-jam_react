@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form__label {
+  display: flex;
+  gap: 10px;
+}
+
+.form__input {
+  border-color: #d94e38;
+  border-radius: 10px;
+  color: black;
+}
+
+.form__button {
+  font-family: "Sacramento", Arial, sans-serif;
+  padding: 5px 40px 0;
+  color: #d94e27;
+  background-color: #fff;
+  border-radius: 10px;
+}
