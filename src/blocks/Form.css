@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 410px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+.form__title {
+}
+.form__event {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.form__label {
+  flex-direction: column;
+}

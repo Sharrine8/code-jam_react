@@ -1,0 +1,32 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #e16600;
+  color: white;
+  padding: 40px;
+}
+.events__title {
+}
+.events__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.events__form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  gap: 40px;
+}
+.events__label {
+  display: flex;
+  flex-direction: column;
+}

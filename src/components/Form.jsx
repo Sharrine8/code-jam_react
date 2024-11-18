@@ -1,66 +1,32 @@
 import "../blocks/Form.css";
-import Modal from "./Modal";
+import { useState } from "react";
 
-function Form({ name, onClose, contentClass, isOpen }) {
+function Form() {
   return (
-    <Modal
-      name={name}
-      isOpen={isOpen}
-      onClose={onClose}
-      contentClass={contentClass}
-    >
-      <form action="" className="modal__form">
-        <h2 className="modal__form-title">Create Event</h2>
-        <label htmlFor="" className="modal__label">
+    <form className="form" onSubmit={handleSubmit}>
+      <h2 className="form__title">Create event</h2>
+      <div className="form__event">
+        <label htmlFor="name" className="form__label">
           Name {""}
-          <input
-            type="text"
-            className="modal__input"
-            placeholder="Enter event name"
-            required
-          />
+          <input type="text" id="name" className="form__input" />
         </label>
-        <label htmlFor="" className="modal__label">
+        <label htmlFor="location" className="form__label">
           Location {""}
-          <input
-            type="text"
-            className="modal__input"
-            placeholder="Enter location"
-            required
-          />
+          <input type="text" id="location" className="form__input" />
         </label>
-        <label htmlFor="" className="modal__label">
+        <label htmlFor="date" className="form__label">
           Date {""}
-          <input
-            type="text"
-            className="modal__input"
-            placeholder="Enter date"
-            required
-          />
+          <input type="date" id="date" className="form__input" />
         </label>
-        <label htmlFor="" className="modal__label">
+        <label htmlFor="time" className="form__label">
           Time {""}
-          <input
-            type="text"
-            className="modal__input"
-            placeholder="Enter time"
-            required
-          />
+          <input type="time" id="time" className="form__input" />
         </label>
-        <label htmlFor="" className="modal__label">
-          ImageUrl{""}
-          <input
-            type="text"
-            className="modal__input"
-            placeholder="Image url"
-            required
-          />
-        </label>
-        <button type="submit" className="modal__submit">
-          Save
-        </button>
-      </form>
-    </Modal>
+      </div>
+      <button type="submit" className="form__submit">
+        Submit
+      </button>
+    </form>
   );
 }
 

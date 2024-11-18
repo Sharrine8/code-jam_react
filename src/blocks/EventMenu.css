@@ -1,0 +1,9 @@
+.events-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.events-menu__container {
+  display: flex;
+  flex-direction: column;
+}

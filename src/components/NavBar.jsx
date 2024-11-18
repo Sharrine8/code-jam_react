@@ -12,6 +12,9 @@ function NavBar() {
       <NavLink to="/events" className={customClassName}>
         Create Event
       </NavLink>
+      <NavLink to="events-menu" className={customClassName}>
+        Event Menu
+      </NavLink>
       <NavLink to="/about-us" className={customClassName}>
         About Us
       </NavLink>
