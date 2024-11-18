@@ -1,0 +1,33 @@
+.my-event {
+  padding-top: 100px;
+}
+
+.my-event__title {
+  font-family: "Sacramento", Arial, sans-serif;
+  color: #d94e28;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+
+.my-event__subtitle {
+  font-family: "Sacramento", Arial, sans-serif;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.my-event__dishes {
+  background-color: rgba(217, 78, 40, 0.4);
+  margin: auto 4em;
+  border-radius: 30px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-event__dish {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 78, 40, 0.3) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+}
