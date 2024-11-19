@@ -82,6 +82,8 @@
   gap: 30px;
 }
 .menu-section__chef-name {
+.menu-section__chef-name {
+  padding: 20px;
   margin: 0;
 }
 .menu-section__submit {

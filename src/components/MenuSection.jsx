@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../blocks/MenuSection.css";
 
 function MenuSection() {
@@ -20,6 +21,10 @@ function MenuSection() {
       const updatedMenu = [...menu, { menuTitle, menuChef }];
       setMenu(updatedMenu);
       sessionStorage.setItem("menu", JSON.stringify(updatedMenu));
+  const handleAddMenu = (e) => {
+    e.preventDefault();
+    if (menuTitle && menuChef) {
+      setMenu([...menu, { menuTitle, menuChef }]);
       setMenuTitle("");
       setMenuChef("");
     }
@@ -83,6 +88,7 @@ function MenuSection() {
                     onClick={() => handleDelete(index)}
                   ></button>
                 </div>
+                <p className="menu-section__chef-name">{menuItem.menuChef}</p>
               </div>
             ))}
           </div>
@@ -99,4 +105,5 @@ function MenuSection() {
     </div>
   );
 }
+
 export default MenuSection;
