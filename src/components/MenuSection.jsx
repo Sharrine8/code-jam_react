@@ -16,7 +16,9 @@ function MenuSection() {
   const handleAddMenu = (e) => {
     e.preventDefault();
     if (menuTitle && menuChef) {
-      setMenu([...menu, { menuTitle, menuChef }]);
+      const updatedMenu = [...menu, { menuTitle, menuChef }];
+      setMenu(updatedMenu);
+      sessionStorage.setItem("menu", JSON.stringify(updatedMenu));
       setMenuTitle("");
       setMenuChef("");
     }
