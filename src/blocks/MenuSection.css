@@ -59,16 +59,36 @@
   color: #fff;
   margin: 0 0 20px;
 }
+.menu-section__menu-item:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
 .menu-section__menu-name {
   padding: 20px;
   margin: 0;
 }
-.menu-section__chef-name {
+.menu-section__name-container {
+  display: flex;
+  align-items: center;
   padding: 20px;
+  gap: 30px;
+}
+.menu-section__chef-name {
   margin: 0;
 }
 .menu-section__submit {
   margin-left: auto;
 }
 .menu-section_button_action_clear {
+}
+
+.menu-section__delete-btn {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background: transparent url("../assets/trashHover.svg");
+  border: none;
+}
+.menu-section__delete-btn:hover {
+  background: transparent url("../assets/trash.svg");
 }

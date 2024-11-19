@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../blocks/MenuSection.css";
 
 function MenuSection() {
@@ -6,14 +6,30 @@ function MenuSection() {
   const [menuTitle, setMenuTitle] = useState("");
   const [menuChef, setMenuChef] = useState("");
 
+  useEffect(() => {
+    const savedData = sessionStorage.getItem("menu");
+    if (savedData) {
+      JSON.parse(savedData);
+    }
+  }, []);
+
   const handleAddMenu = (e) => {
     e.preventDefault();
+
     if (menuTitle && menuChef) {
-      setMenu([...menu, { menuTitle, menuChef }]);
+      const updatedMenu = [...menu, { menuTitle, menuChef }];
+      setMenu(updatedMenu);
+      sessionStorage.setItem("menu", JSON.stringify(updatedMenu));
       setMenuTitle("");
       setMenuChef("");
     }
   };
+
+  const handleDelete = (index) => {
+    const removeMenu = menu.filter((_, i) => i !== index);
+    setMenu(removeMenu);
+  };
+
   const handleClearMenu = () => {
     setMenu([]);
   };
@@ -57,7 +73,13 @@ function MenuSection() {
                 <h4 className="menu-section__menu-name">
                   {menuItem.menuTitle}
                 </h4>
-                <p className="menu-section__chef-name">{menuItem.menuChef}</p>
+                <div className="menu-section__name-container">
+                  <p className="menu-section__chef-name">{menuItem.menuChef}</p>
+                  <button
+                    className="menu-section__delete-btn"
+                    onClick={() => handleDelete(index)}
+                  ></button>
+                </div>
               </div>
             ))}
           </div>
@@ -74,5 +96,4 @@ function MenuSection() {
     </div>
   );
 }
-
 export default MenuSection;
