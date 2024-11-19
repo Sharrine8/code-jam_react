@@ -9,7 +9,7 @@ function MenuSection() {
   useEffect(() => {
     const savedData = sessionStorage.getItem("menu");
     if (savedData) {
-      JSON.parse(savedData);
+      setMenu(JSON.parse(savedData));
     }
   }, []);
 
@@ -27,6 +27,7 @@ function MenuSection() {
 
   const handleDelete = (index) => {
     const removeMenu = menu.filter((_, i) => i !== index);
+    sessionStorage.setItem("menu", JSON.stringify(removeMenu));
     setMenu(removeMenu);
   };
 
