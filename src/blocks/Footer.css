@@ -1,8 +1,9 @@
 footer {
-  padding: 20px 20px 40px 144px;
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .footer__companyTag {
@@ -31,17 +32,6 @@ footer {
   font-weight: bold;
   font-size: 13px;
 }
-
-/* .footer__border {
-  border-bottom: 1px solid white;
-  width: 80%;
-  margin: 0 auto 10px;
-} */
-
-/* 
-.fa-brands {
-  padding-right: 10px;
-} */
 
 @media screen and (max-width: 700px) {
   .footer__item {
