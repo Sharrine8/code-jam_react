@@ -26,7 +26,7 @@ function Form() {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="name" className="form__label">
-        <p className="form__text">Event Name:</p>
+        <p className="form__text">Event Name</p>
         <input
           type="text"
           id="name"
@@ -38,7 +38,7 @@ function Form() {
         />
       </label>
       <label htmlFor="location" className="form__label">
-        <p className="form__text">Location:</p>
+        <p className="form__text">Location</p>
         <input
           type="text"
           id="location"
@@ -50,7 +50,7 @@ function Form() {
         />
       </label>
       <label htmlFor="date" className="form__label">
-        <p className="form__text">Date:</p>
+        <p className="form__text">Date</p>
         <input
           type="date"
           id="date"
@@ -62,7 +62,7 @@ function Form() {
         />
       </label>
       <label htmlFor="time" className="form__label">
-        <p className="form__text">Time:</p>
+        <p className="form__text">Time</p>
         <input
           type="time"
           id="time"
