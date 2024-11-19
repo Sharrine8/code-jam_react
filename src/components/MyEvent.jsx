@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Modal from "./Modal";
 import "../blocks/MyEvent.css";
+import MenuSection from "./MenuSection";
 
 function MyEvent() {
   const [formData, setFormData] = useState(null);
@@ -33,7 +34,9 @@ function MyEvent() {
       <h1 className="my-event__title">{formData.name}</h1>
       <p className="my-event__subtitle">Location: {formData.location}</p>
       <p className="my-event__subtitle">Date: {formData.date}</p>
-      <div className="my-event__dishes">
+      <p className="my-event__subtitle">Time: {formData.time}</p>
+      <MenuSection />
+      {/* <div className="my-event__dishes">
         {dishes.length === 0 ? (
           <p>No dishes have been added yet.</p>
         ) : (
@@ -44,7 +47,7 @@ function MyEvent() {
           </ul>
         )}
       </div>
-      <button className="my-event__add-btn">Add dish</button>
+      <button className="my-event__add-btn">Add dish</button> */}
       {/* <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
