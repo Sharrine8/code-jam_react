@@ -5,7 +5,7 @@
 .my-event__title {
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e28;
-  margin-bottom: 0;
+  margin: 0 auto;
   font-size: 50px;
 }
 
