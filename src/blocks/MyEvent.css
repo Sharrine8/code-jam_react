@@ -5,14 +5,16 @@
 .my-event__title {
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e28;
-  margin-bottom: 0;
+  margin: 0 auto;
   font-size: 50px;
+  padding-bottom: 10px;
 }
 
 .my-event__subtitle {
   font-family: "Sacramento", Arial, sans-serif;
   font-size: 20px;
-  margin: 5px;
+  padding: 5px;
+  margin: 0;
 }
 
 .my-event__dishes {

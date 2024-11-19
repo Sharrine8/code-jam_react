@@ -6,7 +6,7 @@
 .main__header {
   display: flex;
   gap: 30px;
-  padding: 2em 40px;
+  padding: 80px 40px;
   justify-content: space-evenly;
 }
 
@@ -16,13 +16,17 @@
   align-items: center;
 }
 
+.main__header-right {
+  width: 55%;
+}
+
 .main__logo {
   max-width: 300px;
 }
 
 .main__subtitle {
   font-family: "Sacramento", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .main__video {
@@ -37,11 +41,27 @@
 .main__planner {
   background: linear-gradient(
     180deg,
-    rgba(217, 78, 40, 0.3) 0%,
+    rgb(255 110 71) 0%,
     rgba(255, 255, 255, 1) 80%
   );
   border-radius: 30px;
   min-height: 300px;
+  padding: 80px 40px;
+}
+
+.Main-planner-text {
+  margin-bottom: 50px;
+}
+
+.Main__planner-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.planner__image {
+  max-width: 400px;
+  border-radius: 30px;
 }
 
 @media (max-width: 870px) {

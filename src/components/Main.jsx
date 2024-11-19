@@ -1,6 +1,7 @@
 import logo from "../assets/logo-orange-invis.png";
 import video from "../assets/friends-video.mp4";
 import "../blocks/Main.css";
+import planner__image from "../assets/main__planner-image.jpg";
 
 function Main() {
   return (
@@ -9,10 +10,6 @@ function Main() {
         <div className="main__header-left">
           <img className="main__logo" src={logo} alt="Friendsgiving Jam Logo" />
           <p className="main__subtitle">Event Planner</p>
-          <p className="main__header-text">
-            This is the header section where we put the title, intro, and video
-            section
-          </p>
         </div>
         <div className="main__header-right">
           <video
@@ -26,10 +23,26 @@ function Main() {
         </div>
       </section>
       <section className="main__planner">
-        This is the part about the planner, with the image of a planner example
-        and a side with the info of how it work
-        <div>okss</div>
-        <div>hello world </div>
+        <h3 className="Main-planner-text">Create an Event Today </h3>
+        <div className="Main__planner-flex">
+          <div>
+            <img
+              className="planner__image"
+              src={planner__image}
+              alt="planner__image"
+            />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et
+              fuga, distinctio eum iusto mollitia earum qui similique atque
+              blanditiis error aut deleniti nesciunt, tempora saepe, doloribus
+              voluptatum ipsum molestias labore perferendis est facilis!
+              Deleniti optio eos adipisci ut sit possimus perferendis eum
+              laboriosam modi cupiditate nulla, minus a quo.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
