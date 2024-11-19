@@ -1,4 +1,5 @@
 .logo {
+  background: transparent;
   margin: 0;
   padding: 0;
   display: flex;
@@ -6,6 +7,7 @@
 }
 
 .logo__image {
+  background: #6c0345;
   height: 50px;
   width: 50px;
 }
