@@ -2,6 +2,7 @@ import "../blocks/AboutUs.css";
 import img from "../assets/Stuart-pic.jpg";
 import img2 from "../assets/Mouachee-Thaos.jpg";
 import img3 from "../assets/AlReyes.png";
+import img4 from "../assets/Christia-Anderson.jpeg";
 
 function AboutUs() {
   return (
@@ -19,7 +20,7 @@ function AboutUs() {
         </div>
 
         <div className="about-us__card">
-          <img src="" alt="" className="about-us__image" />
+          <img src={img4} alt="" className="about-us__image" />
           <div className="about-us__description">
             <h1 className="about-us__title">Christia Anderson</h1>
             <h2 className="about-us__info">okkkkkscncnscnicc</h2>
