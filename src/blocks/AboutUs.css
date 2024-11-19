@@ -3,6 +3,7 @@
 }
 
 .about-us__card {
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   list-style-type: none;
