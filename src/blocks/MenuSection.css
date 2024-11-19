@@ -20,15 +20,22 @@
 .menu-section__input {
   height: 50px;
   padding: 0 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
 }
-.menu-section__button {
+.menu-section__input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
 }
+
 .menu-section__button_action_add {
   background-color: orange;
   color: white;
   border: none;
   width: 70px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .menu-section__content {
@@ -41,8 +48,7 @@
 .menu-section__added-title {
   margin-right: auto;
 }
-.menu-section__no-menu {
-}
+
 .menu-section__menu-list {
   display: flex;
   flex-direction: column;
@@ -74,12 +80,22 @@
   gap: 30px;
 }
 .menu-section__chef-name {
+  padding: 0;
   margin: 0;
 }
 .menu-section__submit {
   margin-left: auto;
 }
-.menu-section_button_action_clear {
+
+.menu-section__delete-btn {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  background: transparent url("../assets/trashHover.svg");
+  border: none;
+}
+.menu-section__delete-btn:hover {
+  background: transparent url("../assets/trash.svg");
 }
 
 .menu-section__delete-btn {

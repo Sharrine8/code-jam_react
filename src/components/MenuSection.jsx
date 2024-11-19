@@ -46,6 +46,7 @@ function MenuSection() {
             value={menuTitle}
             onChange={(e) => setMenuTitle(e.target.value)}
             placeholder="Enter Dish Name"
+            required
           />
           <input
             type="text"
@@ -53,6 +54,7 @@ function MenuSection() {
             value={menuChef}
             onChange={(e) => setMenuChef(e.target.value)}
             placeholder="Enter Your Name"
+            required
           />
           <button
             className="menu-section__button menu-section__button_action_add"
