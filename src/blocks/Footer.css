@@ -1,0 +1,41 @@
+footer {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer__companyTag {
+  text-align: center;
+  color: #f9af67;
+  font-size: 13px;
+}
+
+.footer__logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__item {
+  padding-left: 15px;
+  text-decoration: none;
+  color: #f9af67;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__item {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+}

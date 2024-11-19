@@ -1,0 +1,10 @@
+.events {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.events__title {
+  font-family: "Sacramento", Arial, sans-serif;
+  color: #d94e27;
+  font-size: 50px;
+}
