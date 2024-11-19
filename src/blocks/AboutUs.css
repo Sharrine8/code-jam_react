@@ -58,6 +58,7 @@
 
 .github__logo {
   background: transparent url(../assets/github-logo.svg) center no-repeat;
+  background-size: contain;
   width: 21px;
   height: 18px;
   border: none;
@@ -71,6 +72,7 @@
 
 .linkedIn__logo {
   background: transparent url(../assets/linkedIn-logo.svg) center no-repeat;
+  background-size: contain;
   width: 21px;
   height: 18px;
   border: none;
