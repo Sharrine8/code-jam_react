@@ -1,32 +1,27 @@
 import "../blocks/footer.css";
 import miniLogo from "../assets/logo-orange-mini.png";
-
+import { NavLink } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
-      <p className="footer__companyTag">© 2024 Company, Inc</p>
+      <p className="footer__companyTag">© 2024 FriendsGiving Jam, Inc</p>
       <img className="footer__logo" src={miniLogo} alt="logo-orange-mini" />
       <div className="footer__container footer__border">
         <ul className="footer__links">
           <li>
-            <a href="../idex.html" className="footer__item">
+            <NavLink to="/" className="footer__item">
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="footer__item">
-              Creat Event
-            </a>
+            <NavLink to="/events" className="footer__item">
+              Create Event
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="footer__item">
-              Join Event
-            </a>
-          </li>
-          <li>
-            <a href="#" className="footer__item">
-              About Us
-            </a>
+            <NavLink to="/about-us" className="footer__item">
+              About us
+            </NavLink>
           </li>
         </ul>
       </div>
