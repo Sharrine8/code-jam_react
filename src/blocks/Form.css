@@ -48,4 +48,10 @@
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form__button:hover {
+  transform: scale(1.06);
+  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }
