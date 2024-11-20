@@ -179,6 +179,9 @@
 }
 
 @media (max-width: 560px) {
+  .menu-section {
+    width: 80vw;
+  }
   .menu-section__inputs {
     flex-direction: column;
     gap: 10px;

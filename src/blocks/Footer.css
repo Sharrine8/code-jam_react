@@ -8,7 +8,7 @@ footer {
 
 .footer__companyTag {
   text-align: center;
-  color: #f9af67;
+  color: rgba(217, 78, 40, 0.8);
   font-size: 13px;
 }
 
@@ -28,14 +28,27 @@ footer {
 .footer__item {
   padding-left: 15px;
   text-decoration: none;
-  color: #f9af67;
+  color: rgba(217, 78, 40, 0.8);
   font-weight: bold;
   font-size: 13px;
+}
+
+.footer__item:hover {
+  color: #d0a79b;
 }
 
 @media screen and (max-width: 700px) {
   .footer__item {
     font-size: 18px;
     padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer__logo {
+    margin: auto;
   }
 }
