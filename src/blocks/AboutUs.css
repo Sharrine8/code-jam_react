@@ -19,6 +19,14 @@
   overflow: hidden;
   width: 282px;
   position: relative;
+  background-image: linear-gradient(
+    to right top,
+    #d94e28,
+    #c53237,
+    #ab1a41,
+    #8d0746,
+    #6c0345
+  );
 }
 
 .about-us__cards {
@@ -31,6 +39,7 @@
 }
 
 .about-us__image {
+  object-fit: cover;
   height: 282px;
   width: 282px;
 }
@@ -39,7 +48,6 @@
   padding-top: 25px;
   padding-bottom: 25px;
   align-items: center;
-  background: #dc6b19;
   padding-left: 20px;
   padding-right: 20px;
   justify-content: space-between;
@@ -87,6 +95,7 @@
 }
 
 .github__logo:hover {
+  opacity: 50%;
   cursor: pointer;
   transform: scale(1.06);
 }
@@ -102,20 +111,15 @@
 }
 
 .linkedIn__logo:hover {
+  opacity: 50%;
   cursor: pointer;
   transform: scale(1.06);
 }
 
-@media screen and (max-width: 560px) {
+@media (max-width: 560px) {
   .about-us__cards {
     flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
     align-items: center;
-  }
-
-  .github__logo {
-    margin: 0;
+    gap: 20px;
   }
 }
