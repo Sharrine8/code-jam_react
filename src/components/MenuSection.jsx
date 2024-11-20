@@ -119,21 +119,23 @@ function MenuSection() {
             {menu.map((menuItem, index) => (
               <div key={index} className="menu-section__menu-item">
                 {editingIndex === index ? (
-                  <>
-                    <input
-                      type="text"
-                      className="menu-section__input menu-section__input_type_edit-title "
-                      name="title"
-                      value={isEditing.title}
-                      onChange={handleEditChange}
-                    />
-                    <input
-                      name="name"
-                      value={isEditing.name}
-                      onChange={handleEditChange}
-                      type="text"
-                      className="menu-section__input menu-section__input_type_edit-name"
-                    />
+                  <div className="menu-section__inputs-container">
+                    <div className="menu-section__inputs-edit">
+                      <input
+                        type="text"
+                        className="menu-section__input menu-section__input_type_edit-title "
+                        name="title"
+                        value={isEditing.title}
+                        onChange={handleEditChange}
+                      />
+                      <input
+                        name="name"
+                        value={isEditing.name}
+                        onChange={handleEditChange}
+                        type="text"
+                        className="menu-section__input menu-section__input_type_edit-name"
+                      />
+                    </div>
                     <button
                       className="menu-section__save-button"
                       onClick={() => handleSave(index)}
@@ -144,7 +146,7 @@ function MenuSection() {
                     >
                       Save
                     </button>
-                  </>
+                  </div>
                 ) : (
                   <div className="menu-section__item-container">
                     <div className="menu-section__item-info">
