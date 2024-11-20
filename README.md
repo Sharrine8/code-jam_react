@@ -1,4 +1,4 @@
-# September 2024 Code Jam Project: Golden Oak -- Autumn Cookbook Group
+# November 2024 Code Jam Project: Friendsgiving -- Event Planner
 
 ### Overview
 
