@@ -29,11 +29,12 @@
   color: black;
   min-width: 200px;
   text-align: center;
-  border: none;
+  border: 1px transparent;
+  height: 50px;
 }
 
 .form__input:focus {
-  outline-style: outset;
+  outline-style: inset;
   border: 1px solid #d94e28;
 }
 
