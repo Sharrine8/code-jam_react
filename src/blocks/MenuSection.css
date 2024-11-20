@@ -30,6 +30,7 @@
 .menu-section__inputs {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .menu-section__input {
   height: 50px;
@@ -49,13 +50,14 @@
 
 .menu-section__button_action_add {
   font-family: "Sacramento", Arial, sans-serif;
-  padding: 5px 20px 0;
+  padding: 0 20px 0;
   color: #fff;
   background-color: #d94e28;
   border-radius: 10px;
   border: none;
   border-radius: 10px;
   font-size: 20px;
+  height: 50px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -174,4 +176,31 @@
 .menu-section__button_action_clear:hover {
   transform: scale(1.06);
   box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
+}
+
+@media (max-width: 560px) {
+  .menu-section__inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-section__title {
+    margin: 20px auto;
+  }
+
+  .menu-section__button_action_clear {
+    width: 100%;
+  }
+
+  .menu-section__item-container {
+    flex-direction: column;
+  }
+
+  .menu-section__item-info {
+    flex-direction: inherit;
+  }
+
+  .menu-section__item-btns {
+    margin: auto;
+  }
 }

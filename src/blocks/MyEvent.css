@@ -1,5 +1,7 @@
 .my-event {
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-event__title {
@@ -15,4 +17,11 @@
   font-size: 20px;
   padding: 5px;
   margin: 0;
+}
+
+@media (max-width: 530px) {
+  .my-event {
+    display: flex;
+    flex-direction: column;
+  }
 }
