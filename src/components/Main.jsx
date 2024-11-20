@@ -1,12 +1,16 @@
 import logo from "../assets/logo-orange-invis.png";
 import video from "../assets/friends-video.mp4";
 import "../blocks/Main.css";
-import planner__image from "../assets/main__planner-image.jpg";
+import planner__image from "../assets/friends-giving-jam.jpg";
 
 import birthdayParty from "../assets/birthdayParty.jpg";
 import ChrismasParty from "../assets/ChrismasParty.jpg";
 import FriendsGiving from "../assets/FriendsGiving.jpg";
 import newYear from "../assets/newYear.jpg";
+
+import iconOne from "../assets/calendar.svg";
+import iconTwo from "../assets/calendar.svg";
+import iconThree from "../assets/calendar.svg";
 
 function Main() {
   return (
@@ -38,14 +42,20 @@ function Main() {
             />
           </div>
           <div className="main__planner__item">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et
-              fuga, distinctio eum iusto mollitia earum qui similique atque
-              blanditiis error aut deleniti nesciunt, tempora saepe, doloribus
-              voluptatum ipsum molestias labore perferendis est facilis!
-              Deleniti optio eos adipisci ut sit possimus perferendis eum
-              laboriosam modi cupiditate nulla, minus a quo.
-            </p>
+            <div className="main__icon-flex">
+              <div className="main__icon-item-flex">
+                <img className="icon-img" src={iconOne} alt="" />
+                <p className="icon-text">create event</p>
+              </div>
+              <div className="main__icon-item-flex">
+                <img className="icon-img" src={iconTwo} alt="" />
+                <p className="icon-text">create event</p>
+              </div>
+              <div className="main__icon-item-flex">
+                <img className="icon-img" src={iconThree} alt="" />
+                <p className="icon-text">create event</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

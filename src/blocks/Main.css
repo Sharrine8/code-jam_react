@@ -64,12 +64,34 @@
 .Main__planner-flex {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-evenly;
 }
 
 .planner__image {
-  max-width: 400px;
+  max-width: 376px;
   border-radius: 30px;
+}
+
+.main__icon-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main__icon-item-flex {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-text {
+  font-size: 30px;
+  font-family: "Sacramento", Arial, sans-serif;
 }
 
 .main__ideas {
@@ -97,11 +119,6 @@
   list-style: none;
   gap: 50px;
 }
-
-/* .main__ideas-item {
-  width: 100px;
-  height: 100px;
-} */
 
 .ideas-images {
   max-width: 100%;
