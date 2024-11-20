@@ -5,7 +5,7 @@ import planner__image from "../assets/main__planner-image.jpg";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main page">
       <section className="main__header">
         <div className="main__header-left">
           <img className="main__logo" src={logo} alt="Friendsgiving Jam Logo" />
@@ -25,14 +25,14 @@ function Main() {
       <section className="main__planner">
         <h3 className="Main-planner-text">Create an Event Today </h3>
         <div className="Main__planner-flex">
-          <div>
+          <div className="main__planner__item">
             <img
               className="planner__image"
               src={planner__image}
               alt="planner__image"
             />
           </div>
-          <div>
+          <div className="main__planner__item">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et
               fuga, distinctio eum iusto mollitia earum qui similique atque
@@ -43,6 +43,15 @@ function Main() {
             </p>
           </div>
         </div>
+      </section>
+      <section className="main__ideas">
+        <h3 className="main__ideas-text">Event Ideas</h3>
+        <ul className="main__ideas-flex">
+          <li className="main__ideas-item">hello world</li>
+          <li className="main__ideas-item">hello world</li>
+          <li className="main__ideas-item">hello world</li>
+          <li className="main__ideas-item">hello world</li>
+        </ul>
       </section>
     </div>
   );

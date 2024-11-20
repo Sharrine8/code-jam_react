@@ -1,12 +1,13 @@
 .main {
-  margin: auto;
+  margin: 0 auto;
   scrollbar-gutter: stable both-edges;
+  max-width: 1280px;
 }
 
 .main__header {
   display: flex;
   gap: 30px;
-  padding: 80px 40px;
+  padding: 100px 40px;
   justify-content: space-evenly;
 }
 
@@ -46,7 +47,7 @@
   );
   border-radius: 30px;
   min-height: 300px;
-  padding: 80px 40px;
+  padding: 100px 40px;
 }
 
 .Main-planner-text {
@@ -64,9 +65,20 @@
   border-radius: 30px;
 }
 
+.main__ideas {
+  padding: 100px 40px;
+}
+
+.main__ideas-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (max-width: 870px) {
   .main__header {
     flex-direction: column;
     padding: 50px 20px;
+    align-items: center;
   }
 }
