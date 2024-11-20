@@ -120,3 +120,6 @@
   margin: 20px 20px 20px 0;
   height: 26px;
 }
+.menu-section__button_action_clear {
+  cursor: pointer;
+}
