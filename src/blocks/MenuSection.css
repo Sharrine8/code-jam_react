@@ -1,17 +1,31 @@
 .menu-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgb(255 110 71) 0%,
+    rgba(255, 255, 255, 1) 95%
+  );
+  border-radius: 30px;
+  padding: 10px 40px;
+  max-width: 600px;
+  margin: 5px auto;
 }
 .menu-section__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  max-width: 480px;
+  max-width: 500px;
   width: 100%;
 }
-.menu-secion__title {
+.menu-section__title {
+  font-family: "Sacramento", Arial, sans-serif;
   margin-right: auto;
+  color: #fff;
+  font-size: 30px;
 }
 .menu-section__inputs {
   display: flex;
@@ -19,40 +33,44 @@
 }
 .menu-section__input {
   height: 50px;
-  padding: 0 10px;
   border: none;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: #fff;
   color: inherit;
+  border-radius: 10px;
+  min-width: 200px;
+  text-align: center;
 }
-.menu-section__input_type_name,
-.menu-section__input_type_chef {
-  border-bottom: 1px solid black;
-}
-.menu-section__input_type_name:focus,
-.menu-section__input_type_chef:focus {
-  outline: none;
-  border-bottom: 1px solid black;
+
+.menu-section__input:focus {
+  outline-style: outset;
+  border: 1px solid #d94e28;
 }
 
 .menu-section__button_action_add {
-  background-color: orange;
-  color: white;
-  border: none;
-  width: 70px;
+  font-family: "Sacramento", Arial, sans-serif;
+  padding: 5px 20px 0;
+  color: #fff;
+  background-color: #d94e28;
   border-radius: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.menu-section__button_action_add:hover {
+  transform: scale(1.06);
+  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }
 
 .menu-section__content {
   display: flex;
   flex-direction: column;
-  max-width: 480px;
+  max-width: 500px;
   width: 100%;
   align-self: center;
-}
-.menu-section__added-title {
-  margin-right: auto;
 }
 
 .menu-section__menu-list {
@@ -61,25 +79,25 @@
   justify-content: center;
   align-items: center;
 }
-.menu-section__menu-item {
+
+.menu-section__item-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 480px;
+  padding: 8px 0;
+}
+
+.menu-section__menu-item {
   width: 100%;
   background-color: rgba(217, 78, 40, 0.8);
   color: #fff;
   margin: 0 0 20px;
+  border-radius: 10px;
 }
-.menu-section__menu-item:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease-in-out;
-}
+
 .menu-section__menu-name {
-  padding: 20px;
   margin: 0;
 }
-.menu-section__name-container {
+.menu-section__item-info {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -89,20 +107,24 @@
   padding: 0;
   margin: 0;
 }
-.menu-section__submit {
-  margin-left: auto;
+
+.menu-section__item-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px 0 auto;
 }
 
 .menu-section__delete-btn {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  background: transparent url("../assets/trashHover.svg");
+  background: transparent url("../assets/trash.svg");
   border: none;
   padding: 0;
 }
 .menu-section__delete-btn:hover {
-  background: transparent url("../assets/trash.svg");
+  background: transparent url("../assets/trashHover.svg");
 }
 .menu-section__input_type_edit-name {
   outline: none;
@@ -112,14 +134,44 @@
   outline: none;
 }
 .menu-section__edit-btn {
-  cursor: pointer;
+  font-family: "Sacramento", Arial, sans-serif;
+  padding: 5px 20px 0;
+  color: #fff;
+  background-color: #d94e28;
+  border-radius: 10px;
   border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
+.menu-section__edit-btn:hover {
+  transform: scale(1.06);
+  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
+}
+
 .menu-section__save-button {
   cursor: pointer;
   margin: 20px 20px 20px 0;
   height: 26px;
 }
 .menu-section__button_action_clear {
+  font-family: "Sacramento", Arial, sans-serif;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #d94e28;
+  border-radius: 10px;
+  min-width: 230px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.menu-section__button_action_clear:hover {
+  transform: scale(1.06);
+  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }

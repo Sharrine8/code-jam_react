@@ -76,12 +76,12 @@ function MenuSection() {
   return (
     <div className="menu-section">
       <div className="menu-section__container">
-        <h3 className="menu-secion__title">Add Dish</h3>
+        <h3 className="menu-section__title">Add Dish</h3>
         <div className="menu-section__inputs">
           <input
             type="text"
             name="title"
-            className="menu-section__input menu-section__input_type_name"
+            className="menu-section__input"
             value={menuDetails.title}
             onChange={handleMenuChange}
             placeholder="Enter Dish Name"
@@ -90,7 +90,7 @@ function MenuSection() {
           <input
             type="text"
             name="name"
-            className="menu-section__input menu-section__input_type_chef"
+            className="menu-section__input"
             value={menuDetails.name}
             onChange={handleMenuChange}
             placeholder="Enter Your Name"
@@ -109,9 +109,11 @@ function MenuSection() {
       </div>
 
       <div className="menu-section__content">
-        <h3 className="menu-section__added-title">Our Event Menu</h3>
+        <h3 className="menu-section__title">Our Event Menu</h3>
         {menu.length === 0 ? (
-          <div className="menu-section__no-menu">No dishes added</div>
+          <div className="menu-section__no-menu">
+            Click 'Add' to add your first dish!
+          </div>
         ) : (
           <div className="menu-section__menu-list">
             {menu.map((menuItem, index) => (
@@ -140,16 +142,18 @@ function MenuSection() {
                         isEditing.name.trim() === ""
                       }
                     >
-                      save
+                      Save
                     </button>
                   </>
                 ) : (
-                  <>
-                    <h4 className="menu-section__menu-name">
-                      {menuItem.title}
-                    </h4>
-                    <div className="menu-section__name-container">
+                  <div className="menu-section__item-container">
+                    <div className="menu-section__item-info">
+                      <h4 className="menu-section__menu-name">
+                        {menuItem.title}
+                      </h4>
                       <p className="menu-section__chef-name">{menuItem.name}</p>
+                    </div>
+                    <div className="menu-section__item-btns">
                       <button
                         className="menu-section__edit-btn"
                         onClick={() => handleEdit(index, menuItem)}
@@ -161,7 +165,7 @@ function MenuSection() {
                         onClick={() => handleDelete(index)}
                       ></button>
                     </div>
-                  </>
+                  </div>
                 )}
               </div>
             ))}
@@ -172,7 +176,7 @@ function MenuSection() {
             className="menu-section__button menu-section__button_action_clear"
             onClick={handleClearMenu}
           >
-            Clear
+            Clear All
           </button>
         </div>
       </div>

@@ -16,20 +16,3 @@
   padding: 5px;
   margin: 0;
 }
-
-.my-event__dishes {
-  background-color: rgba(217, 78, 40, 0.4);
-  margin: auto 4em;
-  border-radius: 30px;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-
-.my-event__dish {
-  background: linear-gradient(
-    180deg,
-    rgba(217, 78, 40, 0.3) 0%,
-    rgba(255, 255, 255, 1) 80%
-  );
-}
