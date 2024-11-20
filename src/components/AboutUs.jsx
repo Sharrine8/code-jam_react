@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 function AboutUs() {
   return (
     <div className="about-us">
-      <p className="about-us-text">
+      <p className="about-us-intro__title">About Us</p>
+      <p className="about-us-intro">
         The Inventors of Friendsgiving Jam. It all started in a group chat that
         changed our lives into a thriving business where friends can jam all
         their creative events and dishes into one place! Problem solving, tech
@@ -21,7 +22,6 @@ function AboutUs() {
           <img src={img} alt="" className="about-us__image" />
           <div className="about-us__description">
             <h1 className="about-us__title">Stuart Clark</h1>
-            <h2 className="about-us__info">okkkkkscncnscnicc</h2>
             <Link to="https://github.com/uffylane">
               <button className="github__logo"></button>
             </Link>
@@ -35,7 +35,6 @@ function AboutUs() {
           <img src={img4} alt="" className="about-us__image" />
           <div className="about-us__description">
             <h1 className="about-us__title">Christia Anderson</h1>
-            <h2 className="about-us__info">okkkkkscncnscnicc</h2>
             <Link to="https://github.com/Sharrine8">
               <button className="github__logo"></button>
             </Link>
@@ -48,7 +47,6 @@ function AboutUs() {
           <img src={img3} alt="" className="about-us__image" />
           <div className="about-us__description">
             <h1 className="about-us__title">Al Reyes</h1>
-            <h2 className="about-us__info">okkkkkscncnscnicc</h2>
             <Link to="https://github.com/ReyesEnterprise">
               <button className="github__logo"></button>
             </Link>
@@ -62,9 +60,12 @@ function AboutUs() {
           <img src={img2} alt="" className="about-us__image" />
           <div className="about-us__description">
             <h1 className="about-us__title">Mouachee Thao</h1>
-            <h2 className="about-us__info">okkkkkscncnscnicc</h2>
-            <button className="github__logo"></button>
-            <button className="linkedIn__logo"></button>
+            <Link to="https://github.com/mouachee">
+              <button className="github__logo"></button>
+            </Link>
+            <Link to="https://www.linkedin.com/in/mouachee-thao-126561288/">
+              <button className="linkedIn__logo"></button>
+            </Link>
           </div>
         </div>
       </div>
