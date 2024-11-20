@@ -6,6 +6,7 @@
 - Project Description
 - Technologies Used
 - Plans for Improving
+- Screenshots
 
 **Contributors**
 
