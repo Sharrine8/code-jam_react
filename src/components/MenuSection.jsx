@@ -68,7 +68,9 @@ function MenuSection() {
   };
 
   const handleClearMenu = () => {
-    setMenu([]);
+    const clearedMenu = [];
+    sessionStorage.setItem("menu", JSON.stringify(clearedMenu));
+    setMenu(clearedMenu);
   };
 
   return (
@@ -167,7 +169,7 @@ function MenuSection() {
         )}
         <div className="menu-section__submit">
           <button
-            className="menu-section__button menu-section_button_action_clear"
+            className="menu-section__button menu-section__button_action_clear"
             onClick={handleClearMenu}
           >
             Clear
