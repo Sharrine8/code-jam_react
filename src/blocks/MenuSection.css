@@ -24,8 +24,8 @@
 .menu-section__title {
   font-family: "Sacramento", Arial, sans-serif;
   margin-right: auto;
-  color: #fff;
   font-size: 30px;
+  color: #6c0345;
 }
 .menu-section__inputs {
   display: flex;
