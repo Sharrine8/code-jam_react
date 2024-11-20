@@ -14,8 +14,8 @@ function AboutUs() {
         their creative events and dishes into one place! Problem solving, tech
         savvy, music loving, sports playing, and traveling created a melting pot
         of ideas to get us this far! We shall continue to do so every year to
-        give thanks to life. Giving is not only an act or feeling....its
-        music...its a Jam!
+        give thanks to life. Giving is not only an act or feeling....it's
+        music...it's a Jam!
       </p>
       <div className="about-us__cards">
         <div className="about-us__card">
