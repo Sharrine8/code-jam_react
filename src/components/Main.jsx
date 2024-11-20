@@ -49,7 +49,7 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className="main__ideas page~">
+      <section className="main__ideas page">
         <h3 className="main__ideas-text">Event Ideas</h3>
         <ul className="main__ideas-flex">
           <li className="main__ideas-item">
