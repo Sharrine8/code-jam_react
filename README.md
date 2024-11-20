@@ -39,14 +39,14 @@ Site: https://sharrine8.github.io/code-jam_react/
 
 **Screenshots of Website**
 
-- About Us![Capture PNG screen shot PNG 7](https://github.com/user-attachments/assets/05d55fa1-8d86-4a16-b3c2-3cadadf299ba)
+- About Us![Picture of page](link here)
 
-- Nav bar and Main Header![Capture PNG screen shot PNG 5](https://github.com/user-attachments/assets/7eae93ce-af06-4b71-8df0-b652535c36d5)
+- Nav bar and Main Header![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/nar-header.png)
 
 - Event Ideas & Footer
 
-  ![Capture PNG screen shot PNG 3](https://github.com/sharrine8/code-jam_react/assets/README/event-ideas-footer.png)
+  ![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/event-ideas-footer.png)
 
 - Create an Event![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/create-event.png)
 
-- Your Event and Menu![Capture PNG screen shot](https://github.com/user-attachments/assets/5ae3751e-77ae-4875-90b7-9343e3dbec57)
+- Your Event and Menu![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/my-event.png)
