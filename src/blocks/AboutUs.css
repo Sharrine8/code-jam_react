@@ -2,18 +2,12 @@
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e27;
   font-size: 50px;
-<<<<<<< HEAD
-}
-.about-us-intro {
-  margin-bottom: 90px;
-=======
   font-weight: bold;
 }
 
 .about-us-intro {
   margin-bottom: 90px;
   font-weight: bold;
->>>>>>> about-us
 }
 
 .about-us__card {
