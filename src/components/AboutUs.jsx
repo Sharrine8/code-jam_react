@@ -4,12 +4,10 @@ import img2 from "../assets/Mouachee-Thaos.jpg";
 import img3 from "../assets/AlReyes.png";
 import img4 from "../assets/Christia-Anderson.jpeg";
 import { Link } from "react-router-dom";
-
 function AboutUs() {
   return (
     <div className="about-us">
-      <p className="about-us-intro__title">About Us</p>
-      <p className="about-us-intro">This is where we can put info about us</p>
+      <p>This is where we can put info about us</p>
       <div className="about-us__cards">
         <div className="about-us__card">
           <img src={img} alt="" className="about-us__image" />

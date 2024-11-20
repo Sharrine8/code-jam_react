@@ -2,12 +2,22 @@
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e27;
   font-size: 50px;
+<<<<<<< HEAD
 }
 .about-us-intro {
   margin-bottom: 90px;
+=======
+  font-weight: bold;
+}
+
+.about-us-intro {
+  margin-bottom: 90px;
+  font-weight: bold;
+>>>>>>> about-us
 }
 
 .about-us__card {
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -22,8 +32,7 @@
   list-style-type: none;
   border-radius: 10px;
   overflow: hidden;
-  align-content: space-between;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
 }
 
