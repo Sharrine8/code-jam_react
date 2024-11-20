@@ -3,10 +3,15 @@ import video from "../assets/friends-video.mp4";
 import "../blocks/Main.css";
 import planner__image from "../assets/main__planner-image.jpg";
 
+import birthdayParty from "../assets/birthdayParty.jpg";
+import ChrismasParty from "../assets/ChrismasParty.jpg";
+import FriendsGiving from "../assets/FriendsGiving.jpg";
+import newYear from "../assets/newYear.jpg";
+
 function Main() {
   return (
-    <div className="main page">
-      <section className="main__header">
+    <div className="main">
+      <section className="main__header page">
         <div className="main__header-left">
           <img className="main__logo" src={logo} alt="Friendsgiving Jam Logo" />
           <p className="main__subtitle">Event Planner</p>
@@ -22,7 +27,7 @@ function Main() {
           />
         </div>
       </section>
-      <section className="main__planner">
+      <section className="main__planner page">
         <h3 className="Main-planner-text">Create an Event Today </h3>
         <div className="Main__planner-flex">
           <div className="main__planner__item">
@@ -44,13 +49,33 @@ function Main() {
           </div>
         </div>
       </section>
-      <section className="main__ideas">
+      <section className="main__ideas page~">
         <h3 className="main__ideas-text">Event Ideas</h3>
         <ul className="main__ideas-flex">
-          <li className="main__ideas-item">hello world</li>
-          <li className="main__ideas-item">hello world</li>
-          <li className="main__ideas-item">hello world</li>
-          <li className="main__ideas-item">hello world</li>
+          <li className="main__ideas-item">
+            <img
+              className="ideas-images"
+              src={FriendsGiving}
+              alt="friendsGiving"
+            />
+          </li>
+          <li className="main__ideas-item">
+            <img
+              className="ideas-images"
+              src={ChrismasParty}
+              alt="friendsGiving"
+            />
+          </li>
+          <li className="main__ideas-item">
+            <img
+              className="ideas-images"
+              src={birthdayParty}
+              alt="friendsGiving"
+            />
+          </li>
+          <li className="main__ideas-item">
+            <img className="ideas-images" src={newYear} alt="friendsGiving" />
+          </li>
         </ul>
       </section>
     </div>
