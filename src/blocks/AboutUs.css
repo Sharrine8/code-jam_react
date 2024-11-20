@@ -2,108 +2,6 @@
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e27;
   font-size: 50px;
-}
-.about-us-intro {
-  margin-bottom: 90px;
-}
-
-.about-us__card {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 282px;
-  position: relative;
-}
-
-.about-us__cards {
-  display: flex;
-  list-style-type: none;
-  border-radius: 10px;
-  overflow: hidden;
-  align-content: space-between;
-  justify-content: space-between;
-  position: relative;
-}
-
-.about-us__image {
-  object-fit: cover;
-  height: 282px;
-  width: 282px;
-}
-
-.about-us__description {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  justify-content: space-between;
-  color: black;
-  background-image: linear-gradient(
-    to right top,
-    #d94e28,
-    #c53237,
-    #ab1a41,
-    #8d0746,
-    #6c0345
-  );
-}
-
-.about-us__title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0;
-  font-family: "Sacramento", Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 29.05px;
-}
-
-.about-us__info {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 29.05px;
-}
-
-.github__logo {
-  background: transparent url(../assets/github-logo.svg) center no-repeat;
-  background-size: contain;
-  width: 21px;
-  height: 18px;
-  border: none;
-  font-size: 14px;
-}
-
-.github__logo:hover {
-  opacity: 50%;
-  cursor: pointer;
-}
-
-.linkedIn__logo {
-  background: transparent url(../assets/linkedIn-logo.svg) center no-repeat;
-  background-size: contain;
-  width: 21px;
-  height: 18px;
-  border: none;
-  font-size: 14px;
-}
-
-.linkedIn__logo:hover {
-  opacity: 50%;
-  cursor: pointer;
-}
-.about-us-intro__title {
-  font-family: "Sacramento", Arial, sans-serif;
-  color: #d94e27;
-  font-size: 50px;
   font-weight: bold;
 }
 
@@ -191,7 +89,6 @@
 .github__logo:hover {
   cursor: pointer;
   transform: scale(1.06);
-  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }
 
 .linkedIn__logo {
@@ -207,7 +104,6 @@
 .linkedIn__logo:hover {
   cursor: pointer;
   transform: scale(1.06);
-  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }
 
 @media screen and (max-width: 560px) {
