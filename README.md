@@ -47,6 +47,6 @@ Site: https://sharrine8.github.io/code-jam_react/
 
   ![Capture PNG screen shot PNG 3](https://github.com/sharrine8/code-jam_react/assets/README/event-ideas-footer.png)
 
-- Create an Event![Capture PNG screen shot PNG 8](https://github.com/user-attachments/assets/80ae4cf1-7079-4667-add4-98c0e3f7d4ae)
+- Create an Event![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/create-event.png)
 
 - Your Event and Menu![Capture PNG screen shot](https://github.com/user-attachments/assets/5ae3751e-77ae-4875-90b7-9343e3dbec57)
