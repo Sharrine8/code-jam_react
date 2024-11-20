@@ -21,10 +21,16 @@
   height: 50px;
   padding: 0 10px;
   border: none;
-  border-bottom: 1px solid black;
   box-sizing: border-box;
+  background-color: transparent;
+  color: inherit;
 }
-.menu-section__input:focus {
+.menu-section__input_type_name,
+.menu-section__input_type_chef {
+  border-bottom: 1px solid black;
+}
+.menu-section__input_type_name:focus,
+.menu-section__input_type_chef:focus {
   outline: none;
   border-bottom: 1px solid black;
 }
@@ -93,18 +99,24 @@
   cursor: pointer;
   background: transparent url("../assets/trashHover.svg");
   border: none;
+  padding: 0;
 }
 .menu-section__delete-btn:hover {
   background: transparent url("../assets/trash.svg");
 }
-
-.menu-section__delete-btn {
-  width: 26px;
-  height: 26px;
+.menu-section__input_type_edit-name {
+  outline: none;
+}
+.menu-section__input_type_edit-title {
+  padding: 0 0 0 20px;
+  outline: none;
+}
+.menu-section__edit-btn {
   cursor: pointer;
-  background: transparent url("../assets/trashHover.svg");
   border: none;
 }
-.menu-section__delete-btn:hover {
-  background: transparent url("../assets/trash.svg");
+.menu-section__save-button {
+  cursor: pointer;
+  margin: 20px 20px 20px 0;
+  height: 26px;
 }
