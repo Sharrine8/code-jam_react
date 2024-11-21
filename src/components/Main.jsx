@@ -32,7 +32,7 @@ function Main() {
         </div>
       </section>
       <section className="main__planner page">
-        <h3 className="main-planner-text">Create an Event Today </h3>
+        <h3 className="main-planner-text">Create an Event Today! </h3>
         <div className="main__planner-flex">
           <div className="main__planner__item">
             <img
