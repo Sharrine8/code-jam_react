@@ -28,7 +28,8 @@ Site: https://sharrine8.github.io/code-jam_react/
 
 - HTML
 - CSS (Flexbox, Responsive Layout, Media Queries, Fonts, BEM, etc.)
-- React.js (jsx, Components, React Router DOM, Vite, etc.)
+- JavaScript (jsx, React library, OOP, etc.)
+- React.js (Components, React Router DOM, Vite, etc.)
 - Git & Github
 
 **Plans for Improving**
