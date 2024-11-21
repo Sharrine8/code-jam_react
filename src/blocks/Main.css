@@ -129,6 +129,7 @@
 .main__ideas-images {
   max-width: 100%;
   width: 100%;
+  border-radius: 15px;
 }
 
 @media (max-width: 1235px) {
@@ -153,7 +154,11 @@
   .main__header {
     flex-direction: column;
     padding: 50px 20px;
-    align-items: center;
+    align-items: stretch;
+  }
+
+  .main__video {
+    width: 180%;
   }
 
   .main__planner-flex {
@@ -176,6 +181,7 @@
 
   .main__ideas-images {
     max-width: 80%;
+    border-radius: 30px;
   }
 }
 
