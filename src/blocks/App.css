@@ -8,3 +8,9 @@
   min-height: 100vh;
   padding: 30px;
 }
+
+@media screen and (max-width: 560px) {
+  .app {
+    padding: 0;
+  }
+}

@@ -70,6 +70,7 @@
 .main__planner__image {
   max-width: 376px;
   border-radius: 30px;
+  width: 100%;
 }
 
 .main__icon-flex {
@@ -127,6 +128,7 @@
 
 .main__ideas-images {
   max-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1235px) {
@@ -174,5 +176,14 @@
 
   .main__ideas-images {
     max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main__planner {
+    padding: 10px 5px;
+  }
+  .main__header {
+    padding: 10px 0;
   }
 }

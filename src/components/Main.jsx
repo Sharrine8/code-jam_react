@@ -46,27 +46,28 @@ function Main() {
               <div className="main__icon-item-flex">
                 <img className="main__icon-img" src={iconOne} alt="Calander" />
                 <div className="main__descriptions">
-                  <h3 className="main__icon-text">create event</h3>
+                  <h3 className="main__icon-text">Create and Event</h3>
                   <p className="main__icon-summary">
-                    Give your event a name, date, time and location
+                    Give your event a name, date, time and location!
                   </p>
                 </div>
               </div>
               <div className="main__icon-item-flex">
                 <img className="main__icon-img" src={iconTwo} alt="List" />
                 <div className="main__descriptions">
-                  <h3 className="main__icon-text">create your menu</h3>
+                  <h3 className="main__icon-text">Create Your Menu</h3>
                   <p className="main__icon-summary">
-                    list all of your favorit items to bring to the party
+                    Add your favorite items and who will be bringing them to the
+                    party!
                   </p>
                 </div>
               </div>
               <div className="main__icon-item-flex">
                 <img className="main__icon-img" src={iconThree} alt="Share" />
                 <div className="main__descriptions">
-                  <h3 className="main__icon-text">Share with your friends</h3>
+                  <h3 className="main__icon-text">Share with Your Friends</h3>
                   <p className="main__icon-summary">
-                    Share the with your friends and have lots of fun!
+                    Share the event with your friends and have lots of fun!
                   </p>
                 </div>
               </div>
