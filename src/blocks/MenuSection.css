@@ -128,12 +128,18 @@
 .menu-section__delete-btn:hover {
   background: transparent url("../assets/trashHover.svg");
 }
-.menu-section__input_type_edit-name {
-  outline: none;
-}
+.menu-section__input_type_edit-name,
 .menu-section__input_type_edit-title {
-  padding: 0 0 0 20px;
+  background-color: transparent;
   outline: none;
+  padding: 0;
+  margin: 28px 0 28px 0;
+  height: fit-content;
+}
+.menu-section__input_type_edit-title:focus,
+.menu-section__input_type_edit-name:focus {
+  outline: none;
+  border: none;
 }
 .menu-section__edit-btn {
   font-family: "Sacramento", Arial, sans-serif;
@@ -142,7 +148,6 @@
   background-color: #d94e28;
   border-radius: 10px;
   border: none;
-  border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -154,9 +159,20 @@
 }
 
 .menu-section__save-button {
+  font-family: "Sacramento", Arial, sans-serif;
+  padding: 5px 20px 0;
+  color: #fff;
+  background-color: #d94e28;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  margin: 20px 20px 20px 0;
-  height: 26px;
+  margin: 0 20px 0 0;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.menu-section__save-button:hover {
+  transform: scale(1.06);
+  box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
 }
 .menu-section__button_action_clear {
   font-family: "Sacramento", Arial, sans-serif;
@@ -176,6 +192,12 @@
 .menu-section__button_action_clear:hover {
   transform: scale(1.06);
   box-shadow: rgb(143, 132, 132, 0.5) 5px 5px 5px;
+}
+.menu-section__inputs-container {
+  display: flex;
+  align-items: center;
+}
+.menu-section__inputs-edit {
 }
 
 @media screen and (max-width: 560px) {
@@ -206,5 +228,24 @@
 
   .menu-section__item-btns {
     margin: auto;
+  }
+  .menu-section__input_type_edit-name {
+    margin: 0;
+  }
+  .menu-section__input_type_edit-title {
+    margin: 0 0 30px 0;
+  }
+  .menu-section__inputs-container {
+    margin: 0;
+    flex-direction: column;
+  }
+  .menu-section__inputs-edit {
+    padding: 28px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-section__save-button {
+    margin: auto;
+    margin-bottom: 8px;
   }
 }
