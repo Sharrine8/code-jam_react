@@ -4,9 +4,7 @@ import "../blocks/MenuSection.css";
 function MenuSection() {
   const [menu, setMenu] = useState([]);
   const [menuDetails, setMenuDetails] = useState({ title: "", name: "" });
-  // track which item list being edit
   const [editingIndex, setEditingIndex] = useState(null);
-  // update the editing state
   const [isEditing, setIsEditing] = useState({ title: "", name: "" });
 
   const handleEdit = (index) => {

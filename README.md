@@ -28,7 +28,8 @@ Site: https://sharrine8.github.io/code-jam_react/
 
 - HTML
 - CSS (Flexbox, Responsive Layout, Media Queries, Fonts, BEM, etc.)
-- React.js (jsx, Components, React Router DOM, Vite, etc.)
+- JavaScript (jsx, React library, OOP, etc.)
+- React.js (Components, React Router DOM, Vite, etc.)
 - Git & Github
 
 **Plans for Improving**
@@ -39,8 +40,6 @@ Site: https://sharrine8.github.io/code-jam_react/
 - Find an event page (possibly with a code)
 
 **Screenshots of Website**
-
-- About Us![Picture of page](link here)
 
 - Nav bar and Main Header![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/nar-header.png)
 
