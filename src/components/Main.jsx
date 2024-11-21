@@ -9,8 +9,8 @@ import FriendsGiving from "../assets/FriendsGiving.jpg";
 import newYear from "../assets/newYear.jpg";
 
 import iconOne from "../assets/calendar.svg";
-import iconTwo from "../assets/calendar.svg";
-import iconThree from "../assets/calendar.svg";
+import iconTwo from "../assets/list.svg";
+import iconThree from "../assets/share.svg";
 
 function Main() {
   return (
@@ -32,11 +32,11 @@ function Main() {
         </div>
       </section>
       <section className="main__planner page">
-        <h3 className="Main-planner-text">Create an Event Today </h3>
-        <div className="Main__planner-flex">
+        <h3 className="main-planner-text">Create an Event Today </h3>
+        <div className="main__planner-flex">
           <div className="main__planner__item">
             <img
-              className="planner__image"
+              className="main__planner__image"
               src={planner__image}
               alt="planner__image"
             />
@@ -44,16 +44,31 @@ function Main() {
           <div className="main__planner__item">
             <div className="main__icon-flex">
               <div className="main__icon-item-flex">
-                <img className="icon-img" src={iconOne} alt="" />
-                <p className="icon-text">create event</p>
+                <img className="main__icon-img" src={iconOne} alt="Calander" />
+                <div className="main__descriptions">
+                  <h3 className="main__icon-text">create event</h3>
+                  <p className="main__icon-summary">
+                    Give your event a name, date, time and location
+                  </p>
+                </div>
               </div>
               <div className="main__icon-item-flex">
-                <img className="icon-img" src={iconTwo} alt="" />
-                <p className="icon-text">create event</p>
+                <img className="main__icon-img" src={iconTwo} alt="List" />
+                <div className="main__descriptions">
+                  <h3 className="main__icon-text">create your menu</h3>
+                  <p className="main__icon-summary">
+                    list all of your favorit items to bring to the party
+                  </p>
+                </div>
               </div>
               <div className="main__icon-item-flex">
-                <img className="icon-img" src={iconThree} alt="" />
-                <p className="icon-text">create event</p>
+                <img className="main__icon-img" src={iconThree} alt="Share" />
+                <div className="main__descriptions">
+                  <h3 className="main__icon-text">Share with your friends</h3>
+                  <p className="main__icon-summary">
+                    Share the with your friends and have lots of fun!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -64,27 +79,31 @@ function Main() {
         <ul className="main__ideas-flex">
           <li className="main__ideas-item">
             <img
-              className="ideas-images"
+              className="main__ideas-images"
               src={FriendsGiving}
               alt="friendsGiving"
             />
           </li>
           <li className="main__ideas-item">
             <img
-              className="ideas-images"
+              className="main__ideas-images"
               src={ChrismasParty}
               alt="friendsGiving"
             />
           </li>
           <li className="main__ideas-item">
             <img
-              className="ideas-images"
+              className="main__ideas-images"
               src={birthdayParty}
               alt="friendsGiving"
             />
           </li>
           <li className="main__ideas-item">
-            <img className="ideas-images" src={newYear} alt="friendsGiving" />
+            <img
+              className="main__ideas-images"
+              src={newYear}
+              alt="friendsGiving"
+            />
           </li>
         </ul>
       </section>
