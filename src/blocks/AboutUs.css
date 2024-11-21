@@ -19,6 +19,14 @@
   overflow: hidden;
   width: 282px;
   position: relative;
+  background-image: linear-gradient(
+    to right top,
+    #d94e28,
+    #c53237,
+    #ab1a41,
+    #8d0746,
+    #6c0345
+  );
 }
 
 .about-us__cards {
@@ -31,6 +39,7 @@
 }
 
 .about-us__image {
+  object-fit: cover;
   height: 282px;
   width: 282px;
 }
@@ -82,11 +91,13 @@
   height: 18px;
   border: none;
   font-size: 14px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .github__logo:hover {
   opacity: 50%;
   cursor: pointer;
+  transform: scale(1.06);
 }
 
 .linkedIn__logo {
@@ -96,9 +107,19 @@
   height: 18px;
   border: none;
   font-size: 14px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .linkedIn__logo:hover {
   opacity: 50%;
   cursor: pointer;
+  transform: scale(1.06);
+}
+
+@media (max-width: 560px) {
+  .about-us__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
