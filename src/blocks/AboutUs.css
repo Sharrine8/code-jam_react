@@ -1,13 +1,19 @@
-.about-us-intro__title {
+.about-us {
+  display: grid;
+}
+
+.about-us__intro-title {
   font-family: "Sacramento", Arial, sans-serif;
   color: #d94e27;
   font-size: 50px;
   font-weight: bold;
 }
 
-.about-us-intro {
+.about-us__intro {
   margin-bottom: 90px;
   font-weight: bold;
+  justify-self: center;
+  max-width: 80%;
 }
 
 .about-us__card {
@@ -36,6 +42,8 @@
   overflow: hidden;
   justify-content: space-evenly;
   position: relative;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .about-us__image {

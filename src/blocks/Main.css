@@ -52,7 +52,7 @@
   border-radius: 30px;
   min-height: 300px;
   padding: 20px 40px;
-  margin-bottom: 200px;
+  margin: 0 30px 200px;
 }
 
 .main-planner-text {
@@ -109,6 +109,7 @@
   min-height: 300px;
   padding: 20px 40px;
   margin-bottom: 200px;
+  margin: 0 30px 200px;
 }
 
 .main__ideas-text {
@@ -127,7 +128,6 @@
 }
 
 .main__ideas-images {
-  max-width: 100%;
   width: 100%;
 }
 

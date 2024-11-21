@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function AboutUs() {
   return (
     <div className="about-us">
-      <p className="about-us-intro__title">About Us</p>
-      <p className="about-us-intro">
+      <p className="about-us__intro-title">About Us</p>
+      <p className="about-us__intro">
         The Inventors of Friendsgiving Jam. It all started in a group chat that
         changed our lives into a thriving business where friends can jam all
         their creative events and dishes into one place! Problem solving, tech

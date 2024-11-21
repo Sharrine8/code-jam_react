@@ -13,7 +13,7 @@ function MyEvent() {
   }, []);
 
   if (!formData) {
-    return <p>Create an event</p>;
+    return <h1 className="my-event__title">Create an event to begin!</h1>;
   }
 
   return (

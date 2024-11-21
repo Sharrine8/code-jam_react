@@ -46,7 +46,7 @@ function Main() {
               <div className="main__icon-item-flex">
                 <img className="main__icon-img" src={iconOne} alt="Calander" />
                 <div className="main__descriptions">
-                  <h3 className="main__icon-text">Create and Event</h3>
+                  <h3 className="main__icon-text">Create an Event</h3>
                   <p className="main__icon-summary">
                     Give your event a name, date, time and location!
                   </p>
