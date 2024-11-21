@@ -7,16 +7,13 @@
 }
 
 .logo__image {
-  background: #6c0345;
   height: 50px;
   width: 50px;
-  transition: transform 0.2s ease-in-out;
 }
 
 .logo__image:hover {
   cursor: pointer;
   opacity: 0.5;
-  transform: scale(1.1);
 }
 
 .logo__title {
