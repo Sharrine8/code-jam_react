@@ -41,7 +41,7 @@ Site: https://sharrine8.github.io/code-jam_react/
 
 **Screenshots of Website**
 
-- About Us![Picture of page]()
+- About Us![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/about-us.png)
 
 - Nav bar and Main Header![Picture of page](https://github.com/Sharrine8/code-jam_react/blob/main/src/assets/README/nar-header.png)
 
