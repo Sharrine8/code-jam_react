@@ -55,21 +55,22 @@
   margin-bottom: 200px;
 }
 
-.Main-planner-text {
+.main-planner-text {
   margin-bottom: 100px;
   font-family: "Sacramento", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 }
 
-.Main__planner-flex {
+.main__planner-flex {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.planner__image {
+.main__planner__image {
   max-width: 376px;
   border-radius: 30px;
+  width: 100%;
 }
 
 .main__icon-flex {
@@ -80,18 +81,22 @@
 
 .main__icon-item-flex {
   display: flex;
-  gap: 25px;
+  gap: 40px;
   align-items: center;
 }
 
-.icon-img {
-  width: 40px;
-  height: 40px;
+.main__icon-img {
+  width: 50px;
+  height: 50px;
 }
 
-.icon-text {
-  font-size: 30px;
+.main__icon-text {
+  font-size: 40px;
   font-family: "Sacramento", Arial, sans-serif;
+}
+
+.main__icon-summary {
+  font-size: 20px;
 }
 
 .main__ideas {
@@ -109,7 +114,7 @@
 .main__ideas-text {
   margin-bottom: 100px;
   font-family: "Sacramento", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .main__ideas-flex {
@@ -118,10 +123,30 @@
   align-items: center;
   list-style: none;
   gap: 50px;
+  padding: 0;
 }
 
-.ideas-images {
+.main__ideas-images {
   max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1235px) {
+  .main__planner__image {
+    max-width: 300px;
+  }
+
+  .main__icon-text {
+    font-size: 30px;
+  }
+  .main__icon-summary {
+    font-size: 16px;
+  }
+
+  .main__icon-img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -129,5 +154,36 @@
     flex-direction: column;
     padding: 50px 20px;
     align-items: center;
+  }
+
+  .main__planner-flex {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .main__icon-flex {
+    gap: 40px;
+  }
+
+  .main__icon-item-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main__ideas-flex {
+    flex-direction: column;
+  }
+
+  .main__ideas-images {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main__planner {
+    padding: 10px 5px;
+  }
+  .main__header {
+    padding: 10px 0;
   }
 }
